@@ -25,7 +25,7 @@ public class HelloWord {
 		if (id.isPresent()) {
 	        articleId = "Hola "+ id.get() + "Estàs executant un projecte Maven.";
 	    } else {
-	    	articleId="UNKNOWN";	    	
+	    	articleId="Hola UNKNOWN. Estàs executant un projecte Maven.";	    	
 	    }
 		return articleId;
 	}
