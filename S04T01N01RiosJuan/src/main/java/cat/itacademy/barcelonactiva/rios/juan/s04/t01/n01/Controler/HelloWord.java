@@ -15,8 +15,7 @@ public class HelloWord {
 	@RequestMapping("/HelloWord")
 	@ResponseBody
     public String saluda(@RequestParam(defaultValue = "UNKNOWN")String nom) 
-    { 
-		
+    { 		
         return "Hola " + nom +  " Estàs executant un projecte Maven.";
     }
 	
@@ -25,11 +24,8 @@ public class HelloWord {
 		String articleId;
 		if (id.isPresent()) {
 	        articleId = "Hola "+ id.get() + "Estàs executant un projecte Maven.";
-	        //...
 	    } else {
-	        //...
-	    	articleId="UNKNOWN";
-	    	
+	    	articleId="UNKNOWN";	    	
 	    }
 		return articleId;
 	}
