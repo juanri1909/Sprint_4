@@ -21,7 +21,6 @@ public class FruitaControler {
 	
 	@GetMapping("/fruita/getAll")
 	public List<Fruita> listar(){
-		//return (List<Fruita>) repositorio.findAll();
 		return fruitaservice.Listar();
 	}
 	
